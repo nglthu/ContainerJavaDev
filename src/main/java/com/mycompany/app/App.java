@@ -5,10 +5,19 @@
 
 package com.mycompany.app;
 
+//import java.sql.Date;
+import java.util.Date;
+
+
+
 public class App {
     public static void main(String[] args) {
         int SiSoLop;
         SiSoLop = 40;
+        Date d = new Date();
         System.out.println(SiSoLop);
+        System.out.println(d);
     }
 }
+
+
