@@ -7,6 +7,7 @@ package com.mycompany.app;
 
 //import java.sql.Date;
 import java.util.Date;
+import java.lang.Math;
 
 
 
@@ -15,8 +16,10 @@ public class App {
         int SiSoLop;
         SiSoLop = 40;
         Date d = new Date();
+        double ran = Math.random();
         System.out.println(SiSoLop);
         System.out.println(d);
+        System.out.println(ran);
     }
 }
 
