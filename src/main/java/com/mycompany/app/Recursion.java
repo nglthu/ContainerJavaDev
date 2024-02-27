@@ -1,12 +1,16 @@
 package com.mycompany.app;
 
+// Factorial n!=n(n-1)(n-2)...x3x2x1
 public class Recursion {
-  // Factorial n!=n(n-1)(n-2)...x3x2x1
-  // Constructor
   int num;
+
+  // Constructor
   Recursion() {
   } // default constructor- remember ; before }
-  Recursion(int number){}
+
+  Recursion(int number) {
+  } // constructor for int
+
   public int Recursion(int number) {
     num = number;
     if (num <= 1) // base case
@@ -14,7 +18,5 @@ public class Recursion {
     else
       return num * Recursion(num - 1);
   }
-
-  
 
 }
