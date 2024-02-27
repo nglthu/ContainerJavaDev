@@ -11,10 +11,5 @@ public class Book {
       numPages = p;
     }
   
-    // public static void main(String[] args) {
-    //   Book myObj = new Book("a","b",2);
-    //   System.out.println(myObj.title);
-    // Command /
-    //}
   }
   
