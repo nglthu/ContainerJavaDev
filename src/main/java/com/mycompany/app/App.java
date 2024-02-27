@@ -4,13 +4,13 @@
  *---------------------------------------------------------------------------------------*/
 
 package com.mycompany.app;
-//package com.mycompany.book;
+//Book and App is under the package app
 
 //import java.sql.Date;
 import java.util.Date;
 import java.lang.Math;
 //import built class
-//import Book;
+import Book;
 
 
 
@@ -24,8 +24,8 @@ public class App {
         System.out.println(d);
         System.out.println(ran);
 
-        // Book myObj = new Book("a","b",2);
-        // System.out.println(myObj.title);
+        Book myObj = new Book("a","b",2);
+        System.out.println(myObj.title);
     }
 }
 

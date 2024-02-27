@@ -1,5 +1,4 @@
-
-package com.mycompany.book;
+package com.mycompany.app;
 
 public class Book {
     String title;
