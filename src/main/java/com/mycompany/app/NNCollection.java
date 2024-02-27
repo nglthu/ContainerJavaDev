@@ -17,4 +17,11 @@ public class NNCollection {
         }
         nnArray[index] = n;
     }
+    public String findNumber(String lName) {
+        for (int i = 0; i != free; i++)
+            if (nnArray[i].getLastName().equals(lName))
+            	return nnArray[i].getTelNumber();
+        return new String("Name not found");
+    }
+
 }
