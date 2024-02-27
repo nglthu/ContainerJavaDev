@@ -6,6 +6,7 @@ package com.mycompany.app;
 ```
 
 ## Directory
+<img src ="img/directory.png">
 
 1. Main
    ```
