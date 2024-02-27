@@ -1,3 +1,29 @@
+
+# Code directory:
+
+```
+package com.mycompany.app;
+```
+
+## Directory
+<img src ="img/directory.png">
+
+1. Main
+   ```
+    App.java
+   ```
+3. Classes
+
+   ```
+
+    Book.java
+
+```
+
+Notes: all pieace of codes should be written as classes in src folder under com.mycompany.app
+Main () is in App.java
+
+
 # Try Out Development Containers: Java
 
 [![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/microsoft/vscode-remote-try-java)
