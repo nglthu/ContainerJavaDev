@@ -8,11 +8,11 @@ package com.mycompany.app;
 ## Directory
 <img src ="img/directory.png">
 
-1. Main
+### 1. Main
    ```
     App.java
    ```
-3. Classes
+### 2. Classes
 
    ```
 
@@ -23,6 +23,53 @@ package com.mycompany.app;
 Notes: all pieace of codes should be written as classes in src folder under com.mycompany.app
 Main () is in App.java
 
+### 3. Some code to try
+
+1 public class Student {
+2      String Name;
+3      String StudentID;
+4      int Mark;
+5      Student() { }	; // default constructor
+6      public String Student(String Name, String StudentID, int Mark) {
+7      this.Name = Name;
+8      this.StudentID = StudentID;
+9      this.Mark = Mark;
+
+10     return StudentID;
+
+11    }
+  
+  }```
+```
+Constructor : A default constructor has no arguments (but still has the same name as the class).
+
+```
+Student() { }	;
+```
+
+this: The this keyword refers to the current object in a method or constructor.
+```
+7      this.Name = Name;
+8      this.StudentID = StudentID;
+9      this.Mark = Mark;
+
+
+this refer to the 2, 3, and 4 not 6
+
+```
+# Bug
+## Git bug
+Commit before pulling the updated code
+
+Avoid:
+```
+git pull --ff-only
+```
+ --ff: “fast-forwarded” without creating new commits.
+
+```
+git reset
+``` 
 
 # Try Out Development Containers: Java
 
