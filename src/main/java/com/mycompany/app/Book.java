@@ -1,3 +1,6 @@
+
+package com.mycompany.book;
+
 public class Book {
     String title;
       String author;
