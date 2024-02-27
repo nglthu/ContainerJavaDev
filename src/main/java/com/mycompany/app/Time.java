@@ -3,9 +3,10 @@ package com.mycompany.app;
 //This: refer to the current object and method in the program
 public class Time {
   int hour;
-
   // int minute;
   // int second;
+
+  //Constructor
   Time() { setTime(0);} // default constructor
   Time(int h){setTime(h);}
 
@@ -21,8 +22,7 @@ public class Time {
 
   int getHour(){return hour};
 
-  public String stringToScreen() {
-
+  public int stringToScreen() {
     return hour;
   }
 
