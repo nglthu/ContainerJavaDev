@@ -12,7 +12,7 @@ import java.lang.Math;
 //import user-built class
 import Book;
 import Student;
-
+import Time;
 
 
 public class App {
@@ -24,6 +24,10 @@ public class App {
         Student myStu = new Student();
         myStu.StudentID = "abcd";
         System.out.println(myStu.StudentID);
+        Time myTime = new Time();
+        int a = 12;
+        myTime.setHour(a);
+        System.out.println(myTime);
     }
 }
 
