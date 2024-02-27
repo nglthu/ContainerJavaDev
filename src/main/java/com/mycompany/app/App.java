@@ -21,7 +21,8 @@ public class App {
 
         Book myObj = new Book("a","b",2);
         System.out.println(myObj.title);
-        Student myStu = new Student("A","B",10);
+        Student myStu = new Student();
+        myStu.StudentID = "abcd";
         System.out.println(myStu.StudentID);
     }
 }
