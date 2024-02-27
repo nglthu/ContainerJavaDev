@@ -25,6 +25,7 @@ Main () is in App.java
 
 ### 3. Some code to try
 
+
 ```
 1 public class Student {
 2      String Name;
@@ -42,11 +43,14 @@ Main () is in App.java
   
   }
 ```
+#### 3.1 Constructor
+
 Constructor : A default constructor has no arguments (but still has the same name as the class).
 
 ```
 Student() { }	;
 ```
+#### 3.2 This
 
 this: The this keyword refers to the current object in a method or constructor.
 ```
@@ -56,6 +60,46 @@ this: The this keyword refers to the current object in a method or constructor
 
 ```
 <span style="color:red">**this**</span> refer to the 2, 3, and 4 not 6
+
+#### 3.3 Get and Set
+
+Encapsulation: to make sure that "sensitive" data is hidden from users. 
+To achieve, must: 
++ declare class variables/attributes as private
++ provide public get and set methods to access and update the value of a private variable
+
+```
+1 public class Time {
+2   int hour;
+3  // int minute;
+4  // int second;
+
+5  //Constructor
+6  Time() { setTime(0);} // default constructor
+7  Time(int h){setTime(h);}
+
+8  Time setTime(int h) {
+9    setHour(h);   // Set sets the value
+10    return this; // return value
+11  }
+
+12  Time setHour(int h) {
+13    hour = ((h >= 0 && h < 24) ? h : 0);
+14    return this;
+15  }
+
+16  int getHour(){return hour}; // Get returns the variable value
+
+17  public int stringToScreen() {
+18    return hour;
+19  }
+
+20}
+
+
+
+
+```
 
 
 # Bug
