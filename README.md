@@ -103,6 +103,10 @@ To achieve, must:
 
 
 # Bug
+```
+
+
+```
 ## Git bug
 Commit before pulling the updated code
 
@@ -115,6 +119,10 @@ git pull --ff-only
 ```
 git reset
 ``` 
+
+# Note
+
+Option + Shift + F : arrange code
 
 # Try Out Development Containers: Java
 

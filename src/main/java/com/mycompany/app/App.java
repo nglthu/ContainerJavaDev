@@ -13,6 +13,7 @@ import java.lang.Math;
 import Book;
 import Student;
 import Time;
+import Recursion;
 
 
 public class App {
@@ -27,8 +28,10 @@ public class App {
         Time myTime = new Time();
         int a = 12;
         myTime.setHour(a);
-      
         System.out.println(myTime.stringToScreen());
+
+        Recursion myFactorial = new Recursion(3);
+        System.out.println(myFactorial);
     }
 }
 
