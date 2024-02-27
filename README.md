@@ -25,6 +25,7 @@ Main () is in App.java
 
 ### 3. Some code to try
 
+```
 1 public class Student {
 2      String Name;
 3      String StudentID;
@@ -39,7 +40,7 @@ Main () is in App.java
 
 11    }
   
-  }```
+  }
 ```
 Constructor : A default constructor has no arguments (but still has the same name as the class).
 
