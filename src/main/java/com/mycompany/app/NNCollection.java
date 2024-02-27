@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import NameNumber;
+import com.mycompany.app.NameNumber;
 
 public class NNCollection {
     private NameNumber[] nnArray = new NameNumber[100];
