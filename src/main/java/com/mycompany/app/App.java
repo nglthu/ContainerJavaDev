@@ -16,6 +16,7 @@ import Time;
 import Recursion;
 import List;
 import com.mycompany.app.InnerClass;
+import com.mycompany.app.Person;
 
 
 public class App {
@@ -47,7 +48,11 @@ public class App {
         System.out.println(test2.i + " " + test2.s);
         InnerClass.Flower test3 = test.new Flower("hi", 47);
         System.out.println(test3.s + " " + test3.petalCount);
-      
+        
+        //Test Person
+        Person per = new Person();
+        per.setName("ABC");
+        System.out.println(per.getName());
         
     }
 }
