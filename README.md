@@ -60,7 +60,8 @@ this: The this keyword refers to the current object in a method or constructor
 
 ```
 <span style="color:red">**this**</span> refer to the 2, 3, and 4 not 6
-#### Class inside Class : inner class
+
+#### 3.3 Class inside Class : inner class
 ```
 
 //Java Inner classes
@@ -74,6 +75,7 @@ class InnerClasses {
         InnerClasses.Flower test3 = test.new Flower("hi",47);
         System.out.println(test3.s+ " " +test3.petalCount);
     }
+    
 class doSomething{
         int i =13;
         String s = "hello world";
@@ -96,7 +98,7 @@ class Flower{
 
 ```
 
-#### 3.3 Get and Set
+#### 3.4 Get and Set
 
 
 Encapsulation: to make sure that "sensitive" data is hidden from users. 
@@ -121,6 +123,9 @@ public class Person {
       
     
 }
+```
+Test / call Get and Set
+```
 public static void main(String[] args){
         Person per = new Person();
         per.setName("ABC");
@@ -159,8 +164,39 @@ public static void main(String[] args){
 20}
 
 
+```
+#### 3.5 Recursion
+```
+//Factorial n!=n(n-1)(n-2)...x3x2x1
+public class Recursion {
+  int num;
+
+  // Constructor
+  Recursion() {
+  } // default constructor- remember ; before }
+
+  Recursion(int number) {
+  } // constructor for int
+
+  public int Recursion(int number) {
+    num = number;
+    if (num <= 1) // base case
+      return 1;
+    else
+      return num * Recursion(num - 1);
+  }
+
+}
 
 
+```
+Test/Call recursion
+```
+public static void main(String [] args){
+
+        Recursion myFactorial = new Recursion(3);
+        System.out.println(myFactorial);
+}        
 ```
 
 
