@@ -1,5 +1,35 @@
 
 # Code directory:
+Packages: Use to group related classes.
+"Think of it as a folder in a file directory"
+
+e.g folder "main/java/com/mycompany/app" inside folder "src"
+
+Class: Built-in class And user-defined class
+
+e.g
+```
+package com.mycompany.app;
+
+//Import the whole class belong to the package of com.mycompay.app
+import com.mycompany.app.*;
+
+//Import built-in classes
+import java.util.Date;
+import java.lang.Math;
+
+//import user-built specific classes
+import Book;
+import Student;
+import Time;
+import Recursion;
+import List;
+//detail link to class
+import com.mycompany.app.InnerClass;//the same import InnnerClass
+import com.mycompany.app.Person; // the same import Person
+
+```
+
 
 ```
 package com.mycompany.app;
@@ -75,7 +105,7 @@ class InnerClasses {
         InnerClasses.Flower test3 = test.new Flower("hi",47);
         System.out.println(test3.s+ " " +test3.petalCount);
     }
-    
+
 class doSomething{
         int i =13;
         String s = "hello world";

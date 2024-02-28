@@ -2,14 +2,17 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License. See LICENSE in the project root for license information.
  *---------------------------------------------------------------------------------------*/
-
+//Package com.mycompany.app
 package com.mycompany.app;
-//Book and App is under the package app
+
+//Import the whole class belong to the package of com.mycompay.app
 import com.mycompany.app.*;
-//import java.sql.Date;
+
+//Import built-in class
 import java.util.Date;
 import java.lang.Math;
-//import user-built class
+
+//import user-built specific class
 import Book;
 import Student;
 import Time;
