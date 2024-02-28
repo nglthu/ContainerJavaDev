@@ -98,11 +98,38 @@ class Flower{
 
 #### 3.3 Get and Set
 
+
 Encapsulation: to make sure that "sensitive" data is hidden from users. 
 To achieve, must: 
 + declare class variables/attributes as private
 + provide public get and set methods to access and update the value of a private variable
 
+##### Example 1
+```
+public class Person {
+  
+        private String name;
+        Person(){}
+        
+        public String getName(){
+            return name;
+        }
+        public void setName(String name){
+            this.name = name;
+            
+        }
+      
+    
+}
+public static void main(String[] args){
+        Person per = new Person();
+        per.setName("ABC");
+        System.out.println(per.getName());
+        //output is ABC
+
+}
+```
+##### Example 2
 ```
 1 public class Time {
 2   int hour;
