@@ -60,6 +60,41 @@ this: The this keyword refers to the current object in a method or constructor
 
 ```
 <span style="color:red">**this**</span> refer to the 2, 3, and 4 not 6
+#### Class inside Class : inner class
+```
+
+//Java Inner classes
+// Class doSomething inside HelloWorld
+class InnerClasses {
+    public static void main(String[] args) {
+        
+        InnerClasses test = new InnerClasses();//class
+        InnerClasses.doSomething test2 = test.new doSomething();
+        System.out.println(test2.i + " "+ test2.s);
+        InnerClasses.Flower test3 = test.new Flower("hi",47);
+        System.out.println(test3.s+ " " +test3.petalCount);
+    }
+class doSomething{
+        int i =13;
+        String s = "hello world";
+      
+    }
+class Flower{
+    int petalCount = 0;
+    String s = new String("null");
+    Flower(){}
+    Flower(int petals){ petalCount = petals;}
+    Flower(String ss){ s = ss;}
+    Flower(String s, int petals){
+        this.s = s;
+        this.petalCount = petals;
+        
+    }
+    
+}
+}
+
+```
 
 #### 3.3 Get and Set
 
