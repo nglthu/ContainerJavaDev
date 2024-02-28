@@ -12,11 +12,11 @@ public class Recursion {
   } // constructor for int
 
   public int Recursion(int number) {
-    num = number;
-    if (num <= 1) // base case
+    this.num = number;
+    if (this.num <= 1) // base case
       return 1;
     else
-      return num * Recursion(num - 1);
+      return this.num * Recursion(this.num - 1);
   }
 
 }

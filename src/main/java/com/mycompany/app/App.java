@@ -36,8 +36,10 @@ public class App {
         System.out.println(myTime.stringToScreen());
         
         //Test recursion
-        Recursion myFactorial = new Recursion(3);
-        System.out.println(myFactorial);
+        int num = 3;
+        Recursion myFactorial = new Recursion(num);
+        myFactorial.Recursion(num);
+        System.out.println("test recursion:1x2.."+"x"+num+ "="+myFactorial.Recursion(num));
 
         //Test List
         List myList = new List();
