@@ -228,6 +228,49 @@ public static void main(String [] args){
         System.out.println(myFactorial);
 }        
 ```
+#### 3.6 Array of Objects
+##### Syntax
+
+1. Create using Object class
+```
+Class_Name [] objArrRef;
+OR
+Class_Name objArrRef[];
+```
+2. Instantiate the array of Objects
+```
+Class_Name obj[] = new Class_Name[array_length];
+OR
+Class_Name [] obj = new Class_Name[array_length];
+```
+3. Call /Test
+```
+obj[0] = new Class_Name(para1_val, para2_val, para_n_val);
+obj[1] = new Class_Name(para1_val, para2_val, para_n_val);
+```
+
+##### Example
+
+```
+public class NameNumber {} //A class
+
+private NameNumber[] nnArray = new NameNumber[100];//array of Object class
+
+//Call or test
+
+//Instantiate the array of Object
+     
+        nnArray[0] = new NameNumber("John Doe", "0919191919");
+        nnArray[1] = new NameNumber("John Doe", "919");
+        String lastName = nnArray[0].getLastName();
+        String number = nnArray[0].getTelNumber();
+
+        NNCollection nnC = new NNCollection();
+        nnC.insert(nn[0]); 
+        nnC.insert(nn[1]); 
+        String numFind = nnC.findNumber(lastName);
+
+```
 
 
 # Bug
