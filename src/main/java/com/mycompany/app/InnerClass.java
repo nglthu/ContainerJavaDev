@@ -5,7 +5,7 @@ public class InnerClass {
     // Java Inner classes
     // Class doSomething inside HelloWorld
 
-    public static void main(String[] args) {
+   /*  public static void main(String[] args) {
 
         InnerClass test = new InnerClass();// class
         InnerClass.doSomething test2 = test.new doSomething();
@@ -13,7 +13,7 @@ public class InnerClass {
         InnerClass.Flower test3 = test.new Flower("hi", 47);
         System.out.println(test3.s + " " + test3.petalCount);
     }
-
+    */
     class doSomething {
         int i = 13;
         String s = "hello world";

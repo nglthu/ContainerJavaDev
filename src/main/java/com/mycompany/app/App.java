@@ -10,6 +10,9 @@ import com.mycompany.app.*;
 
 //Import built-in class
 import java.util.Date;
+
+import javax.naming.Name;
+
 import java.lang.Math;
 
 //import user-built specific class
@@ -20,6 +23,8 @@ import Recursion;
 import List;
 import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
+import com.mycompany.app.NNCollection;
+import NameNumber;
 
 
 public class App {
@@ -58,6 +63,25 @@ public class App {
         Person per = new Person();
         per.setName("ABC");
         System.out.println(per.getName());
+        
+        //Test Number Name Collection
+        //Instantiate the array of Object
+        NameNumber [] nn = new NameNumber[2];
+        //To do: bug Name Number
+        //set new value
+        nn[0] = new NameNumber("John Doe", "0919191919");
+        nn[1] = new NameNumber("John Doe", "919");
+        String lastName = nn[0].getLastName();
+        String number = nn[0].getTelNumber();
+
+        NNCollection nnC = new NNCollection();
+        nnC.insert(nn[0]); 
+        nnC.insert(nn[1]); 
+        String numFind = nnC.findNumber(lastName);
+        /* 
+        shift-option a
+        */
+        System.out.println(numFind);
         
     }
 }

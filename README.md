@@ -249,7 +249,9 @@ git reset
 ``` 
 
 # Note
-
+## Comment block
+Shift + Option + A
+## Arrange code
 Option + Shift + F : arrange code
 
 # Try Out Development Containers: Java
