@@ -9,7 +9,10 @@ package com.mycompany.app;
 import com.mycompany.app.*;
 
 //Import built-in class
-import java.util.Date;
+import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.io.*;
 
 import javax.naming.Name;
 
@@ -17,10 +20,11 @@ import java.lang.Math;
 
 //import user-built specific class
 import Book;
+import Library;
 import Student;
 import Time;
 import Recursion;
-import List;
+//import List;
 import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
 import com.mycompany.app.NNCollection;
@@ -50,7 +54,7 @@ public class App {
         System.out.println("test recursion:1x2.."+"x"+num+ "="+myFactorial.Recursion(num));
 
         //Test List
-        List myList = new List();
+      //  List myList = new List();
 
         //Test inner class
         InnerClass test = new InnerClass();// class
@@ -82,6 +86,16 @@ public class App {
         shift-option a
         */
         System.out.println(numFind);
+        //test composition concept
+        //Library has a Book
+        //"Effective Java" is a Book
+        ArrayList<Book> b = new ArrayList<Book>(1);
+        Book b1= new Book("abcd", "dllkldle",2);
+
+        b.add(b1);
+
+
+
         
     }
 }
