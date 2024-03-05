@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.io.*;
 
 import javax.naming.Name;
+import javax.sound.midi.Sequence;
 
 import java.lang.Math;
 
@@ -29,7 +30,7 @@ import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
 import com.mycompany.app.NNCollection;
 import NameNumber;
-import com.mycompany.app.SequenceTest;
+import SequenceTest;
 
 public class App {
     public static void main(String[] args) {
@@ -94,7 +95,9 @@ public class App {
 
        // b.add(b1);
         //test Sequence
-        SequenceTest.add(nn[01]);
+        SequenceTest st = new SequenceTest(2);
+        st.add(nn[0]);
+        System.out.println("sequence test"+st);
 
 
         

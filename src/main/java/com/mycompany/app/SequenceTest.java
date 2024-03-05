@@ -1,4 +1,5 @@
-import java.lang.Object;
+package com.mycompany.app;
+
 public class SequenceTest {
     private Object [] obj;
     private int next =0;
@@ -8,14 +9,13 @@ public class SequenceTest {
 
     }
 
-    public void add (Object x){
+    public  void add (Object x){
         if (this.next < obj.length) {
             obj[next] =x;
             next ++;
         }
+       
         
 
     }
-
-    
 }
