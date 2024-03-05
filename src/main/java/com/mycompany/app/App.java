@@ -29,7 +29,7 @@ import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
 import com.mycompany.app.NNCollection;
 import NameNumber;
-
+import com.mycompany.app.SequenceTest;
 
 public class App {
     public static void main(String[] args) {
@@ -89,11 +89,12 @@ public class App {
         //test composition concept
         //Library has a Book
         //"Effective Java" is a Book
-        ArrayList<Book> b = new ArrayList<Book>(1);
-        Book b1= new Book("abcd", "dllkldle",2);
+        //ArrayList<Book> b = new ArrayList<Book>(1);
+        //Book b1= new Book("abcd", "dllkldle",2);
 
-        b.add(b1);
-
+       // b.add(b1);
+        //test Sequence
+        SequenceTest.add(nn[01]);
 
 
         
