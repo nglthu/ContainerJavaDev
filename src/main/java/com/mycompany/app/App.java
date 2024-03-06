@@ -18,6 +18,7 @@ import javax.naming.Name;
 import javax.sound.midi.Sequence;
 
 import java.lang.Math;
+import java.lang.Object;
 
 //import user-built specific class
 import Book;
@@ -37,6 +38,12 @@ import com.mycompany.app.CellPhone.Tune;
 import com.mycompany.app.CellPhone.ObnoxiousTune;
 import com.mycompany.app.CellPhone.CellPhone.Tune;
 import com.mycompany.app.CellPhone.CellPhone;
+
+
+import com.mycompany.app.Node.*;
+//mport com.mycompany.app.Node.;
+//import com.mycompany.app.Node.;
+//import com.mycompany.app.Node.;
 
 public class App {
     public static void main(String[] args) {
@@ -132,10 +139,14 @@ public class App {
       
         cell.ring((ObnoxiousTune)obTune);//obnoxiousTune.play()
 
-        System.out.println("Test fool complier : Down casting : Dangerous");
-        cell.ring((ObnoxiousTune)tunTune);//error
+        System.out.println("Test fool complier : Down casting : Dangerous, catch error as below");
+        //cell.ring((ObnoxiousTune)tunTune);//error
 
+        //Node
+        Node n = new Plus(new Plus(new Const(1.1),new Const(2.2)),new Const(3.3));
+        System.out.println("n.eval = ", n.eval());
         
+
     }
 }
 
