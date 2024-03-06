@@ -125,6 +125,12 @@ public class App {
         System.out.println("random number " + randomNum);
         cell.ring(t);
 
+        //Fool the complier by casting
+        System.out.println("Test fool complier : Upcasting OK");
+        cell.ring(tunTune); //tune.play()
+        cell.ring((Tune)obTune);//obnoxiousTune.play()
+      
+        cell.ring((ObnoxiousTune)obTune);//obnoxiousTune.play()
 
         
     }
