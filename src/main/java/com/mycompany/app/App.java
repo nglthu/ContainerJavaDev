@@ -97,7 +97,7 @@ public class App {
         //test Sequence
         SequenceTest st = new SequenceTest(2);
         st.add(nn[0]);
-        System.out.println("sequence test"+st);
+        System.out.println("sequence test"+ st);
 
 
         
