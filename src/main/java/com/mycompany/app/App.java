@@ -31,6 +31,11 @@ import com.mycompany.app.Person;
 import com.mycompany.app.NNCollection;
 import NameNumber;
 import SequenceTest;
+import OuterTest;
+
+import com.mycompany.app.CellPhone.Tune;
+import com.mycompany.app.CellPhone.ObnoxiousTune;
+import com.mycompany.app.CellPhone.CellPhone;
 
 public class App {
     public static void main(String[] args) {
@@ -98,6 +103,17 @@ public class App {
         SequenceTest st = new SequenceTest(2);
         st.add(nn[0]);
         System.out.println("sequence test"+ st);
+
+        //test inner class
+        OuterTest ot = new OuterTest();
+        OuterTest.InnerTest it = ot.new InnerTest(3);
+        System.out.println();
+        
+        //testing is-a upcasting
+        System.out.printn("test is -a upcasting");
+        CellPhone cell = new CellPhone();
+        ObnoxiousTune ot = new ObnoxiousTune();
+        cell.ring(ot);
 
 
         
