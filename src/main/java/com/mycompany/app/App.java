@@ -35,6 +35,7 @@ import OuterTest;
 
 import com.mycompany.app.CellPhone.Tune;
 import com.mycompany.app.CellPhone.ObnoxiousTune;
+import com.mycompany.app.CellPhone.CellPhone.Tune;
 import com.mycompany.app.CellPhone.CellPhone;
 
 public class App {
@@ -110,10 +111,12 @@ public class App {
         System.out.println();
         
         //testing is-a upcasting
-        System.out.printn("test is -a upcasting");
+        System.out.println("test is -a upcasting");
         CellPhone cell = new CellPhone();
-        ObnoxiousTune ot = new ObnoxiousTune();
-        cell.ring(ot);
+        ObnoxiousTune obTune = new ObnoxiousTune();
+        Tune tunTune = new Tune();
+        cell.ring(obTune);
+        cell.ring(tunTune);
 
 
         
