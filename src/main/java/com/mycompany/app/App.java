@@ -37,6 +37,7 @@ import OuterTest;
 import com.mycompany.app.CellPhone.Tune;
 import com.mycompany.app.CellPhone.ObnoxiousTune;
 import com.mycompany.app.CellPhone.CellPhone.Tune;
+import com.mycompany.app.Glyph.RoundGlyph;
 import com.mycompany.app.CellPhone.CellPhone;
 
 
@@ -148,6 +149,10 @@ public class App {
         double nEval = n.eval();
        
         System.out.println("n.eval = "+ nEval);
+
+        //Glyph
+        RoundGlyph rg = new RoundGlyph(5);
+        rg.draw();
         
 
     }
