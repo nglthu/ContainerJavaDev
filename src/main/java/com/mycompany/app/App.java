@@ -117,6 +117,13 @@ public class App {
         Tune tunTune = new Tune();
         cell.ring(obTune);
         cell.ring(tunTune);
+        //polymorphism: overiding play() with Tune and Obnoxioustune
+        double randomNum = Math.random();
+        Tune t; //t kieu Tune
+        if(randomNum > 0.5) t = new Tune();
+        else {t = new ObnoxiousTune();}
+        System.out.println("random number " + randomNum);
+        cell.ring(t);
 
 
         
