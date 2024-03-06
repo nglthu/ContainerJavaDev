@@ -29,6 +29,7 @@ import Recursion;
 //import List;
 import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
+import com.mycompany.app.Actor.Stage;
 import com.mycompany.app.NNCollection;
 import NameNumber;
 import SequenceTest;
@@ -42,7 +43,7 @@ import com.mycompany.app.CellPhone.CellPhone;
 
 
 import com.mycompany.app.Node.*;
-//mport com.mycompany.app.Node.;
+import com.mycompany.app.Actor.*;
 //import com.mycompany.app.Node.;
 //import com.mycompany.app.Node.;
 
@@ -153,6 +154,13 @@ public class App {
         //Glyph
         RoundGlyph rg = new RoundGlyph(5);
         rg.draw();
+
+        //test actor
+        Stage s = new Stage();
+        s.go(); //happy actor
+        s.change();
+        s.go(); //sad actor
+
         
 
     }
