@@ -271,6 +271,98 @@ private NameNumber[] nnArray = new NameNumber[100];//array of Object class
         String numFind = nnC.findNumber(lastName);
 
 ```
+#### 3.7 Polymorphism
+Upcasting (is-a) Child->Parent
+Downcasting (has-a) Parent->Child
+```
+public class CellPhone {
+    public CellPhone(){}
+    public void ring (Tune t){
+        t.play();
+    }
+    
+}
+
+public class Tune {
+    public Tune(){}
+    public void play(){
+        System.out.println("Tune.play");
+
+    }
+    
+}
+public class ObnoxiousTune extends Tune {
+    public ObnoxiousTune(){}
+    //polymorphism overrding play method
+    public void play(){
+        System.out.println("ObnoxiousTune.play()");
+    }
+
+    
+}
+
+//Main
+ System.out.println("test is -a upcasting");
+        CellPhone cell = new CellPhone();
+        ObnoxiousTune obTune = new ObnoxiousTune();
+        Tune tunTune = new Tune();
+        cell.ring(obTune);
+        cell.ring(tunTune);
+        //polymorphism: overiding play() with Tune and Obnoxioustune
+        double randomNum = Math.random();
+        Tune t; //t kieu Tune
+        if(randomNum > 0.5) t = new Tune();
+        else {t = new ObnoxiousTune();}
+        System.out.println("random number " + randomNum);
+        cell.ring(t);
+
+        //Fool the complier by casting
+        System.out.println("Test fool complier : Upcasting OK");
+        cell.ring(tunTune); //tune.play()
+        cell.ring((Tune)obTune);//obnoxiousTune.play()
+      
+        cell.ring((ObnoxiousTune)obTune);//obnoxiousTune.play()
+
+        System.out.println("Test fool complier : Down casting : Dangerous, catch error as below");
+        //cell.ring((ObnoxiousTune)tunTune);//error
+
+
+
+```
+#### 3.8 Abstract Class - Abstract Methods
+
+```
+package com.mycompany.app.Glyph;
+
+public abstract class Glyph {
+    abstract void draw();  //method abstract
+    Glyph(){
+        System.out.println("before draw()");
+        draw();
+        System.out.println("after draw()");
+    }
+}
+
+package com.mycompany.app.Glyph;
+
+public class RoundGlyph extends Glyph{
+    int radius ;
+
+    //set radius
+    public RoundGlyph(int r){
+        this.radius = r;
+
+
+    }
+    public void draw (){
+        System.out.println("Round Glyph draw method "+ this.radius);
+    }
+    
+}
+
+
+```
+
 
 
 # Bug
