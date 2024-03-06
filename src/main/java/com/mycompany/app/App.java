@@ -132,6 +132,9 @@ public class App {
       
         cell.ring((ObnoxiousTune)obTune);//obnoxiousTune.play()
 
+        System.out.println("Test fool complier : Down casting : Dangerous");
+        cell.ring((ObnoxiousTune)tunTune);//error
+
         
     }
 }
