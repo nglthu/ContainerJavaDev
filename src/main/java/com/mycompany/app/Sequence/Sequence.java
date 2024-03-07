@@ -34,6 +34,7 @@ public class Sequence {
 
         //end, current, next
     }
+    
     public Selector getSelector(){
         return new SSelector();
     }
