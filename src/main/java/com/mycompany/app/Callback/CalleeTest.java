@@ -1,8 +1,8 @@
 package com.mycompany.app.Callback;
 
-public class Callee implements IncreamentableInterface{
+public class CalleeTest implements Increment{
     private int i=0;
-    void incrementMethod(){
+    public void inMeth(){
         i++;
         System.out.println("Callee with i"+i);
 
