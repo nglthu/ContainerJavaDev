@@ -21,6 +21,7 @@ import java.lang.Math;
 import java.lang.Object;
 
 //import user-built specific class
+import com.mycompany.app.*;
 import Book;
 import Library;
 import Student;
@@ -41,9 +42,9 @@ import com.mycompany.app.CellPhone.ObnoxiousTune;
 import com.mycompany.app.CellPhone.CellPhone.Tune;
 import com.mycompany.app.Glyph.RoundGlyph;
 import com.mycompany.app.CellPhone.CellPhone;
-import com.mycompany.app.Animal;
+
 import com.mycompany.app.Animal.*;
-import com.mycompany.app.Sequence.Sequence;
+import com.mycompany.app.Sequence.SequenceA;
 
 
 import com.mycompany.app.Node.*;
@@ -169,10 +170,11 @@ public class App {
         dog.animalSound();
 
         //Test sequence
-        Sequence seq = new Sequence(10);
-        //for(int i=0; i<10; i++){
-        //  seq.add(Integer.toString(i));
-        //}
+        SequenceA seq = new SequenceA(10);
+        for(int i=0; i<10; i++){
+          seq.add(Integer.toString(i));
+        }
+        System.out.println("sequence"+ seq);
 
 
 

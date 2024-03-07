@@ -20,7 +20,7 @@ public class Time {
     return this;
   }
 
-  int getHour(){return hour};
+  int getHour(){return hour;};
 
   public int stringToScreen() {
     return hour;

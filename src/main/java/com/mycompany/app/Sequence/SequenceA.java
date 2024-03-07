@@ -1,15 +1,14 @@
 package com.mycompany.app.Sequence;
 
-public class Sequence {
+public class SequenceA {
     // array of Object
     private Object [] obj;
     private int next = 0;
     private int size;
    
-    Sequence(){}
-    Sequence(int size){}
-   
-    public Sequence(int size){
+    SequenceA(){}
+    
+    public SequenceA(int size){
         obj = new Object[size];
     }
     //set content
