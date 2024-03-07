@@ -188,13 +188,11 @@ public class App {
       sl.next();
 
     }
-
     // Test callback
-
     CalleeTest cee = new CalleeTest();
     CallerTest cerA = new CallerTest(cee);
     System.out.println("test call back" + cerA);
-    // cerA.go();
+
     int itest = 1;
     while (itest < 5) {
       itest++;
