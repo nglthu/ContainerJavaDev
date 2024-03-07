@@ -43,6 +43,7 @@ import com.mycompany.app.Glyph.RoundGlyph;
 import com.mycompany.app.CellPhone.CellPhone;
 import com.mycompany.app.Animal;
 import com.mycompany.app.Animal.*;
+import com.mycompany.app.Sequence.Sequence;
 
 
 import com.mycompany.app.Node.*;
@@ -168,7 +169,13 @@ public class App {
         dog.animalSound();
 
         //Test sequence
-        
+        Sequence seq = new Sequence(10);
+        //for(int i=0; i<10; i++){
+        //  seq.add(Integer.toString(i));
+        //}
+
+
+
 
 
 

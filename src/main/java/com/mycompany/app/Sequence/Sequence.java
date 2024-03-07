@@ -1,10 +1,13 @@
 package com.mycompany.app.Sequence;
 
-import com.mycompany.app.Sequence.*;
 public class Sequence {
     // array of Object
     private Object [] obj;
     private int next = 0;
+    private int size;
+   
+    Sequence(){}
+    Sequence(int size){}
     
     public Sequence(int size){
         obj = new Object[size];
@@ -34,7 +37,7 @@ public class Sequence {
 
         //end, current, next
     }
-    
+
     public Selector getSelector(){
         return new SSelector();
     }
