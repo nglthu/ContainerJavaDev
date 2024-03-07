@@ -19,6 +19,7 @@ import javax.sound.midi.Sequence;
 
 import java.lang.Math;
 import java.lang.Object;
+import java.nio.channels.Selector;
 
 //import user-built specific class
 import com.mycompany.app.*;
@@ -45,6 +46,7 @@ import com.mycompany.app.CellPhone.CellPhone;
 
 import com.mycompany.app.Animal.*;
 import com.mycompany.app.Sequence.SequenceA;
+import com.mycompany.app.Sequence.Selector;
 
 
 import com.mycompany.app.Node.*;
@@ -174,9 +176,13 @@ public class App {
         for(int i=0; i<10; i++){
           seq.add(Integer.toString(i));
         }
-        System.out.println("sequence"+ seq);
+        Selector sl = seq.getSelector();
+        while (!sl.end()){
+        
+        System.out.println("sequence"+ sl.current());
+        sl.next();
 
-
+        }
 
 
 
