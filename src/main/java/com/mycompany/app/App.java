@@ -30,7 +30,7 @@ import Recursion;
 import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
 import com.mycompany.app.Actor.Stage;
-import com.mycompany.app.Animal.Dog;
+
 import com.mycompany.app.NNCollection;
 import NameNumber;
 import SequenceTest;
@@ -42,6 +42,7 @@ import com.mycompany.app.CellPhone.CellPhone.Tune;
 import com.mycompany.app.Glyph.RoundGlyph;
 import com.mycompany.app.CellPhone.CellPhone;
 import com.mycompany.app.Animal;
+import com.mycompany.app.Animal.*;
 
 
 import com.mycompany.app.Node.*;
@@ -163,7 +164,7 @@ public class App {
         s.change();
         s.go(); //sad actor
         //test animal interface
-        com.mycompany.app.Animal.Animal dog = new Dog();
+        Animal dog = new Dog();
         dog.animalSound();
 
 
