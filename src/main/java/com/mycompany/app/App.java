@@ -46,6 +46,7 @@ import com.mycompany.app.CellPhone.CellPhone;
 
 import com.mycompany.app.Animal.*;
 import com.mycompany.app.Sequence.SequenceA;
+import com.mycompany.app.Sequence.SequenceAnonymous;
 import com.mycompany.app.Sequence.SelectorA;
 
 
@@ -172,7 +173,7 @@ public class App {
         dog.animalSound();
 
         //Test sequence
-        SequenceA seq = new SequenceA(10);
+        SequenceAnonymous seq = new SequenceAnonymous(10);
         for(int i=0; i<10; i++){
           seq.add(Integer.toString(i));
         }
