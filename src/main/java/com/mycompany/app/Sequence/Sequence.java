@@ -19,22 +19,23 @@ public class Sequence {
 
         @Override
         public boolean end() {
-            return i == obj.length
+            return i == obj.length;
         }
 
         @Override
         public Object current() {
-            // TODO Auto-generated method stub
-            throw new UnsupportedOperationException("Unimplemented method 'current'");
+            return obj[i];
         }
 
         @Override
         public void next() {
-            // TODO Auto-generated method stub
-            throw new UnsupportedOperationException("Unimplemented method 'next'");
+            if(i<obj.length) i++;
         }
-        //end, current, next
 
+        //end, current, next
+    }
+    public Selector getSelector(){
+        return new SSelector();
     }
 
     //anonymous Inner Class
