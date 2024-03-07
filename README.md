@@ -362,7 +362,8 @@ public class RoundGlyph extends Glyph{
 
 
 ```
-
+#### 3.9 InnerClass -Anonymous
+<img src ="img/anonymousInnerClass.png">
 
 
 # Bug
