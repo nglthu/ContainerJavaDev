@@ -8,7 +8,7 @@ public class Sequence {
    
     Sequence(){}
     Sequence(int size){}
-    
+   
     public Sequence(int size){
         obj = new Object[size];
     }
