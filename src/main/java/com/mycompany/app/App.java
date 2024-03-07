@@ -46,7 +46,7 @@ import com.mycompany.app.CellPhone.CellPhone;
 
 import com.mycompany.app.Animal.*;
 import com.mycompany.app.Sequence.SequenceA;
-import com.mycompany.app.Sequence.Selector;
+import com.mycompany.app.Sequence.SelectorA;
 
 
 import com.mycompany.app.Node.*;
@@ -176,7 +176,7 @@ public class App {
         for(int i=0; i<10; i++){
           seq.add(Integer.toString(i));
         }
-        Selector sl = seq.getSelector();
+        SelectorA sl = seq.getSelector();
         while (!sl.end()){
         
         System.out.println("sequence"+ sl.current());

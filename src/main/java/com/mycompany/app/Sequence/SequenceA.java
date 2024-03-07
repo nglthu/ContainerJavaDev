@@ -16,7 +16,7 @@ public class SequenceA {
         if(next<obj.length) {obj[next] = x; next ++;}
     }
     //inner class of Subsequence
-    private class SSelector implements Selector{
+    private class SSelector implements SelectorA{
         int i = 0;
 
         @Override
@@ -37,7 +37,7 @@ public class SequenceA {
         //end, current, next
     }
 
-    public Selector getSelector(){
+    public SelectorA getSelector(){
         return new SSelector();
     }
 
