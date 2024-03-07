@@ -48,6 +48,8 @@ import com.mycompany.app.Animal.*;
 import com.mycompany.app.Sequence.SequenceA;
 import com.mycompany.app.Sequence.SequenceAnonymous;
 import com.mycompany.app.Sequence.SelectorA;
+import com.mycompany.app.Callback.Caller;
+import com.mycompany.app.Callback.Callee;
 
 
 import com.mycompany.app.Node.*;
@@ -185,6 +187,11 @@ public class App {
 
         }
 
+        //Test callback
+       
+        Callee cee = new Callee();
+        Caller  cer = new Caller(cee);
+        cer.go();
 
 
 
