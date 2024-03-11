@@ -58,6 +58,7 @@ import com.mycompany.app.Actor.*;
 
 public class App {
   public static void main(String[] args) {
+    System.out.println("test");
 
     // Test Book
     /* Book myObj = new Book("a", "b", 2);
