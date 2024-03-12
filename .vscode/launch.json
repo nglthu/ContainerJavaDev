@@ -2,14 +2,21 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch App",
+            "name": "App",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "com.mycompany.app.App",
-            "args": "",
+            "mainClass": "com.mycompany.app/com.mycompany.app.AppletExample.applet_javafx.src.main.java.com.mycompany.app.App",
             "projectName": "my-app"
-        }
+        },
+        //{
+            //"type": "java",
+            //"name": "Launch App",
+           // "request": "launch",
+           // "cwd": "${workspaceFolder}",
+           // "console": "internalConsole",
+           // "stopOnEntry": false,
+            //"mainClass": "com.mycompany.app.App",
+           // "args": "",
+            //"projectName": "my-app"
+       // }
     ]
 }
