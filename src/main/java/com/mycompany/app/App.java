@@ -53,12 +53,15 @@ import com.mycompany.app.Callback.CalleeTest;
 
 import com.mycompany.app.Node.*;
 import com.mycompany.app.Actor.*;
+import com.mycompany.app.testConstructor;
 //import com.mycompany.app.Node.;
 //import com.mycompany.app.Node.;
 
 public class App {
   public static void main(String[] args) {
     System.out.println("test");
+    testConstructor testCon = new testConstructor();
+    System.out.println(testCon.x);
 
     // Test Book
     /* Book myObj = new Book("a", "b", 2);
