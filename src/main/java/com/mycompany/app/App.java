@@ -71,10 +71,11 @@ public class App {
     System.out.println(myStu.StudentID); */
 
     // Test Time
-    /* Time myTime = new Time();
+    Time myTime = new Time();
     int a = 12;
     myTime.setHour(a);
-    System.out.println(myTime.stringToScreen()); */
+    System.out.println("Example of set time");
+    System.out.println(myTime.stringToScreen()); 
 
     // Test recursion
     /* int num = 3;
