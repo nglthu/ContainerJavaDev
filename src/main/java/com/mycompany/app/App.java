@@ -59,10 +59,10 @@ import com.mycompany.app.testConstructor;
 
 public class App {
   public static void main(String[] args) {
-    System.out.println("test");
+  /*  System.out.println("test");
     testConstructor testCon = new testConstructor();
     System.out.println(testCon.x);
-
+*/
     // Test Book
     /* Book myObj = new Book("a", "b", 2);
     System.out.println(myObj.title);
@@ -72,9 +72,9 @@ public class App {
 
     // Test Time
     Time myTime = new Time();
-    int a = 12;
-    myTime.setHour(a);
-    System.out.println("Example of set time");
+    int h = 10;
+    myTime.setHour(h);
+    System.out.println("vi du ve time, cac ban co the viet them tuy thuoc vao moi sinh vien");
     System.out.println(myTime.stringToScreen()); 
 
     // Test recursion
