@@ -71,11 +71,11 @@ public class App {
     System.out.println(myStu.StudentID); */
 
     // Test Time
-    /*Time myTime = new Time();
+    Time myTime = new Time();
     int h = 10;
     myTime.setHour(h);
     System.out.println("vi du ve time, cac ban co the viet them tuy thuoc vao moi sinh vien");
-    System.out.println(myTime.stringToScreen()); */
+    System.out.println(myTime.stringToScreen()); 
 
     // Test recursion
     /* int num = 3;
