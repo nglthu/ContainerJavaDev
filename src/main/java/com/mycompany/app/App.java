@@ -77,6 +77,7 @@ public class App {
     System.out.println("vi du ve time, cac ban co the viet them tuy thuoc vao moi sinh vien");
     System.out.println(myTime.stringToScreen()); 
 
+    System.out.println("Hung Nguyen xin chao");
     // Test recursion
     /* int num = 3;
     Recursion myFactorial = new Recursion(num);
