@@ -22,21 +22,21 @@ import java.lang.Object;
 import java.nio.channels.Selector;
 
 //import user-built specific class
-import com.mycompany.app.*;
-import Book;
-import Library;
-import Student;
-import Time;
-import Recursion;
+//import com.mycompany.app.*;
+//import Book;
+//import Library;
+//import Student;
+//import Time;
+//import Recursion;
 //import List;
 import com.mycompany.app.InnerClass;
 import com.mycompany.app.Person;
 import com.mycompany.app.Actor.Stage;
 
 import com.mycompany.app.NNCollection;
-import NameNumber;
-import SequenceTest;
-import OuterTest;
+//import NameNumber;
+//import SequenceTest;
+//import OuterTest;
 
 import com.mycompany.app.CellPhone.Tune;
 import com.mycompany.app.CellPhone.ObnoxiousTune;
@@ -61,7 +61,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class App {
-  public App() {
+  /*public App() {
     Button btn = new Button("Button");
     btn.setBounds(50, 50, 50, 50);
     add(btn);
@@ -75,11 +75,12 @@ public class App {
         }
     });
   }
+    */
 
   public static void main(String[] args) {
-    new App();
-  /*  System.out.println("test");
-    testConstructor testCon = new testConstructor();
+   // new App();
+  System.out.println("test");
+   /* TestConstructor testCon = new testConstructor();
     System.out.println(testCon.x);
 */
     // Test Book
@@ -90,11 +91,11 @@ public class App {
     System.out.println(myStu.StudentID); */
 
     // Test Time
-    Time myTime = new Time();
-    int h = 10;
-    myTime.setHour(h);
-    System.out.println("vi du ve time, cac ban co the viet them tuy thuoc vao moi sinh vien");
-    System.out.println(myTime.stringToScreen()); 
+    //Time myTime = new Time();
+    //int h = 10;
+   // myTime.setHour(h);
+    //System.out.println("vi du ve time, cac ban co the viet them tuy thuoc vao moi sinh vien");
+    //System.out.println(myTime.stringToScreen()); 
 
     // Test recursion
     /* int num = 3;
